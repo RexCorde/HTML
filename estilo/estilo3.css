@@ -1,0 +1,110 @@
+body{
+  background-image: url("../imagenes/fondoP.png");
+  margin: 0; /* Elimina el margen predeterminado del cuerpo */
+  padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+  background-size: cover; /* Cubre todo el área disponible */
+   /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  height: auto;
+  background-attachment: fixed; 
+  --opacidad-negro: 0.5; /* estas dos líneas es para oscurecer el fondp*/
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../imagenes/fondoP.png");
+}
+
+.menu{
+  list-style: none;
+  padding: 0;
+  background-color: rgb(124, 95, 93);
+  width: 90%;
+  max-width: 1000px;
+  margin:auto;
+}
+
+.menu li a{
+  text-decoration: none;/*esto es para que se quite la decoración del texto*/
+  color:rgb(199, 182, 175);
+  padding: 20px;
+  display: block;
+}
+.menu li{
+  margin-left: 2%;
+  display:inline-block; /*esto es para que se quede a lo largo, en vez de una lista para abajo*/
+  text-align: center;
+}
+
+.menu li a:hover{ /*esto es para cuando pases el ratón por encima, se cambie de color*/
+  background-color: rgb(124, 41, 16);
+}
+
+
+
+.titulo{
+  margin-top: 7%;
+  margin-left: 0%;
+  color: rgb(201, 185, 183);
+  display:block;
+  padding-left: 5%;
+  
+}
+.titulo2{
+  display: block;
+  width: 40%;
+  padding-left: 5%;
+ height: 20%;
+ font-size: 500;
+ color: rgb(201, 185, 183);
+  
+}
+
+
+.texto{
+  text-align: left;
+  width: 40%;
+  padding-left: 5%;
+ height: 20%;
+ font-size: 500;
+ color: aliceblue;
+ display: inline-block;
+  
+}
+.img2{
+  width: 20%;
+  display: inline-block;
+  vertical-align:bottom;
+
+  margin:auto;
+
+}
+
+.img3{
+  margin-left: 60%;
+  width: 25%;
+  display: inline-block; 
+  float:none;
+  
+
+}
+.img4{
+  width:40%;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.img5{
+  margin-right: 10%;
+  width: 16%;
+  display: inline-block; 
+  margin-left: 70%;
+  
+}
+.img6{
+  margin-right: 10%;
+  width: 25%;
+  display: block; 
+  float: right;
+}
+
+footer{
+  margin-top: 20%;
+}
+

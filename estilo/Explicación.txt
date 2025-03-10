@@ -1,0 +1,1 @@
+Ya no tengo tiempo para cambiar lo de todas las páginas de CSS y haciendo varias páginas me hice menos lío colocando los estilos y luego vi que había que tener solamente una página CSS.

@@ -1,0 +1,134 @@
+/* Configuración global */
+body {
+  background-image: url("../imagenes/fondoMale.jpg");
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  --opacidad-negro: 0.5; /* Estas dos líneas oscurecen el fondo */
+  background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../imagenes/fondoMale.jpg");
+}
+
+.exo-font {
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Estilos del menú */
+.menu {
+  list-style: none;
+  padding: 0;
+  background-color: rgb(141, 80, 77);
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex; /* Para flexibilidad y escalabilidad */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: rgb(226, 181, 161);
+  padding: 10px 20px; 
+  display: block;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a:hover {
+  background-color: rgb(182, 102, 11);
+}
+
+/* Estilos para títulos */
+.titulo, .titulo2, .titulo3 {
+  color: rgb(201, 185, 183);
+  font-size: 1.5em; /* Uso de unidades relativas */
+  text-align: center;
+}
+
+.titulo {
+  margin-top: 5%; /* Disminuido para escalabilidad */
+  padding-left: 5%;
+}
+
+.titulo2 {
+  text-align: center;
+}
+
+/* Estilos para textos */
+.texto, .texto2 {
+  color: aliceblue;
+  font-size: 1em; /* Uso de unidades relativas */
+}
+
+.texto {
+
+  float: left;
+  width: 100%; /* Cambiado a 100% para escalabilidad */
+  padding-left: 5%;
+  padding-bottom: 20px; /* Agregado para separaciones en dispositivos móviles */
+}
+
+.texto2 {
+  float: none;
+  width: 90%; /* Más espacio para mejor adaptación */
+  padding-left: 5%;
+  display: block; /* Para permitir separación adecuada */
+  text-align: justify; /* Para una alineación uniforme */
+  margin-bottom: 20px; /* Para separar elementos en dispositivos pequeños */
+}
+
+/* Estilos para videos */
+.video {
+  text-align: right;
+  padding-right: 10%; /* Disminuido para mejor escalabilidad */
+}
+
+/* Estilos para imágenes */
+img {
+  width: 30%; /* Ancho completo para escalabilidad */
+  height: auto; /* Mantiene la proporción */
+  display:inline-block;
+  margin:50px;
+  
+}
+
+.img2 {
+  width: 20%; 
+  display: block; 
+  margin: 20px auto; /* Para centrar la imagen */
+}
+
+/* Media Queries para escalabilidad, esto lo he buscado porque cuando me llevo el trabajo a clase se me descoloca y no queda bien */
+@media (max-width: 768px) {
+  /* Cambios para dispositivos móviles */
+  .menu {
+      flex-direction: column; /* Cambiar a formato de lista */
+      align-items: center;
+  }
+
+  .texto {
+      padding-left: 2%;
+  }
+
+  .video {
+      text-align: center; /* Centra para dispositivos móviles */
+  }
+
+  img {
+      width: 80%; /* Reducción del tamaño en móviles */
+  }
+}
+
+footer{
+  margin-top: 20%;
+  }

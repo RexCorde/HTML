@@ -1,0 +1,121 @@
+body{
+    background-image: url("../imagenes/fondoLucaria.png");
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+    background-size: cover; /* Cubre todo el área disponible */
+     /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    height: auto;
+    background-attachment: fixed; 
+    --opacidad-negro: 0.5; /* estas dos líneas es para oscurecer el fondp*/
+    background-image: linear-gradient(rgba(0, 0, 0, var(--opacidad-negro)), rgba(0, 0, 0, var(--opacidad-negro))), url("../imagenes/fondoLucaria.png");
+}
+
+  .cinzel-font{
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1000;
+  }
+  .exo-font{
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .menu{
+    list-style: none;
+    padding: 0;
+    background-color: rgb(133, 107, 90);
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+  }
+
+  .menu li a{
+    text-decoration: none;/*esto es para que se quite la decoración del texto*/
+    color:rgb(208, 214, 214);
+    padding: 20px;
+    display: block;
+  }
+  .menu li{
+    display:inline-block; /*esto es para que se quede a lo largo, en vez de una lista para abajo*/
+    text-align: center;
+  }
+
+  .menu li a:hover{ /*esto es para cuando pases el ratón por encima, se cambie de color*/
+    background-color: rgb(128, 35, 23);
+  }
+ 
+  .texto{
+    float: left;
+    width: 20%;
+    padding-left: 5%;
+   height: 20%;
+   font-size: 500;
+    
+  }
+
+  .titulo {
+    
+    padding-left: 11%;
+  }
+
+  .titulo{
+    margin-top: 7%;
+    margin-left: 0%;
+    color: rgb(201, 185, 183);
+    display:block;
+    padding-left: 5%;
+  }
+
+  
+
+  img{
+    width: 25%;
+
+  }
+.img1{
+  width: 35%;
+  
+
+}
+
+  .img2{
+    width: 20%;
+    margin-left: 30%;
+    display: inline-block;
+    vertical-align:bottom;
+    margin:auto;
+  }
+
+  th{
+    color: rgb(143, 69, 69);
+  }
+
+  td{
+    color: rgb(0, 0, 0);
+  }
+
+  .li{
+    color: brown;
+   width: 50%;
+
+   }
+   
+  table{
+    text-align: center;
+    display: inline-block;
+    background-color: rgb(179, 161, 154);
+    margin-left: 13%;
+  }
+  video{
+    width: 50%;
+    padding-left: 5%;
+  }
+
+  footer{
+    margin-top: 20%;
+    }
